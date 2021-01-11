@@ -1,0 +1,301 @@
+local function PPHAXAUTHENTICATION()
+	-- Objects
+
+	local PPHAXAUTH = Instance.new("ScreenGui")
+	local ppframe = Instance.new("ImageLabel")
+	local pptext = Instance.new("TextBox")
+	local PPHAXGG = Instance.new("ImageLabel")
+	local PPHAXLABEL = Instance.new("TextLabel")
+	local PPHAXLABEL_Roundify_12px = Instance.new("ImageLabel")
+
+	-- Properties
+
+	PPHAXAUTH.Name = "PPHAXAUTH"
+	PPHAXAUTH.Parent = game.CoreGui
+
+	ppframe.Name = "ppframe"
+	ppframe.Parent = PPHAXAUTH
+	ppframe.BackgroundColor3 = Color3.new(1, 1, 1)
+	ppframe.BackgroundTransparency = 1
+	ppframe.Position = UDim2.new(0.846060634, 0, 0.846245468, 0)
+	ppframe.Size = UDim2.new(0, 203, 0, 58)
+	ppframe.Image = "rbxassetid://3570695787"
+	ppframe.ScaleType = Enum.ScaleType.Slice
+	ppframe.SliceCenter = Rect.new(100, 100, 100, 100)
+
+	pptext.Name = "pptext"
+	pptext.Parent = ppframe
+	pptext.BackgroundColor3 = Color3.new(0.686275, 0.788235, 1)
+	pptext.BorderColor3 = Color3.new(0.0823529, 0, 1)
+	pptext.BorderSizePixel = 0
+	pptext.Position = UDim2.new(0.0344827585, 0, 0.131465524, 0)
+	pptext.Size = UDim2.new(0, 188, 0, 41)
+	pptext.ClearTextOnFocus = false
+	pptext.Font = Enum.Font.SourceSans
+	pptext.PlaceholderText = "PPID here!"
+	pptext.Text = ""
+	pptext.TextColor3 = Color3.new(0.784314, 0.768628, 0.607843)
+	pptext.TextScaled = true
+	pptext.TextSize = 14
+	pptext.TextStrokeTransparency = 0.69999998807907
+	pptext.TextWrapped = true
+
+	PPHAXGG.Name = "PPHAXGG"
+	PPHAXGG.Parent = PPHAXAUTH
+	PPHAXGG.BackgroundColor3 = Color3.new(1, 1, 1)
+	PPHAXGG.BackgroundTransparency = 1
+	PPHAXGG.Position = UDim2.new(0.384517759, 0, 0.423122764, 0)
+	PPHAXGG.Size = UDim2.new(0, 363, 0, 128)
+	PPHAXGG.Image = "rbxassetid://3570695787"
+	PPHAXGG.ImageColor3 = Color3.new(0.784314, 0.435294, 0.388235)
+	PPHAXGG.ScaleType = Enum.ScaleType.Slice
+	PPHAXGG.SliceCenter = Rect.new(100, 100, 100, 100)
+
+	PPHAXLABEL.Name = "PPHAXLABEL"
+	PPHAXLABEL.Parent = PPHAXGG
+	PPHAXLABEL.BackgroundColor3 = Color3.new(1, 1, 1)
+	PPHAXLABEL.BackgroundTransparency = 1
+	PPHAXLABEL.BorderSizePixel = 0
+	PPHAXLABEL.Position = UDim2.new(0.0695489496, 0, 0.100776002, 0)
+	PPHAXLABEL.Size = UDim2.new(0, 311, 0, 102)
+	PPHAXLABEL.ZIndex = 2
+	PPHAXLABEL.Font = Enum.Font.SourceSansSemibold
+	PPHAXLABEL.Text = "Authentication complete, welcome to PPHAX..."
+	PPHAXLABEL.TextColor3 = Color3.new(0, 0, 0)
+	PPHAXLABEL.TextScaled = true
+	PPHAXLABEL.TextSize = 14
+	PPHAXLABEL.TextWrapped = true
+
+	PPHAXLABEL_Roundify_12px.Name = "PPHAXLABEL_Roundify_12px"
+	PPHAXLABEL_Roundify_12px.Parent = PPHAXLABEL
+	PPHAXLABEL_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
+	PPHAXLABEL_Roundify_12px.BackgroundColor3 = Color3.new(1, 1, 1)
+	PPHAXLABEL_Roundify_12px.BackgroundTransparency = 1
+	PPHAXLABEL_Roundify_12px.Position = UDim2.new(0.5, 0, 0.5, 0)
+	PPHAXLABEL_Roundify_12px.Size = UDim2.new(1, 0, 1, 0)
+	PPHAXLABEL_Roundify_12px.Image = "rbxassetid://3570695787"
+	PPHAXLABEL_Roundify_12px.ImageColor3 = Color3.new(1, 0.00392157, 0.0196078)
+	PPHAXLABEL_Roundify_12px.ScaleType = Enum.ScaleType.Slice
+	PPHAXLABEL_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
+	PPHAXGG.Visible = false
+end
+local function PPHAXGUI()
+	local PPHAX = Instance.new("ScreenGui")
+	local PPHAXFRAME = Instance.new("Frame")
+	local PPSCROLLFRAME = Instance.new("ScrollingFrame")
+	local TextButton = Instance.new("TextButton")
+	local TextButton_2 = Instance.new("TextButton")
+	local TextButton_3 = Instance.new("TextButton")
+	local TextButton_4 = Instance.new("TextButton")
+	local TextButton_5 = Instance.new("TextButton")
+	local TextButton_6 = Instance.new("TextButton")
+	local TextButton_7 = Instance.new("TextButton")
+	local TextButton_8 = Instance.new("TextButton")
+	local PPHAXPROFILE = Instance.new("Frame")
+	local PPHAXINFOFRAME = Instance.new("ScrollingFrame")
+	local PPHAXNAME = Instance.new("TextLabel")
+	local PPHAXINFO1 = Instance.new("TextLabel")
+	local PPHAXINFO3 = Instance.new("TextLabel")
+	local PPHAXINFO2 = Instance.new("TextLabel")
+	local PPHAXINFO5 = Instance.new("TextLabel")
+	local PPHAXINFO7 = Instance.new("TextLabel")
+	local PPHAXINFO4 = Instance.new("TextLabel")
+	local PPHAXINFO6 = Instance.new("TextLabel")
+	local PPHAXxRELQUIT = Instance.new("TextLabel")
+
+	PPHAX.Name = "PPHAX"
+	PPHAX.Parent = game.CoreGui
+	PPHAX.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+	PPHAXFRAME.Name = "PPHAXFRAME"
+	PPHAXFRAME.Parent = PPHAX
+	PPHAXFRAME.BackgroundColor3 = Color3.new(0.72549, 0.654902, 0.784314)
+	PPHAXFRAME.Position = UDim2.new(0.373731017, 0, 0.317044079, 0)
+	PPHAXFRAME.Size = UDim2.new(0, 396, 0, 306)
+
+	PPSCROLLFRAME.Name = "PPSCROLLFRAME"
+	PPSCROLLFRAME.Parent = PPHAXFRAME
+	PPSCROLLFRAME.Active = true
+	PPSCROLLFRAME.BackgroundColor3 = Color3.new(0.176471, 0.317647, 0.211765)
+	PPSCROLLFRAME.Position = UDim2.new(0.558080792, 0, 0, 0)
+	PPSCROLLFRAME.Size = UDim2.new(0, 175, 0, 306)
+
+	TextButton.Parent = PPSCROLLFRAME
+	TextButton.BackgroundColor3 = Color3.new(1, 1, 1)
+	TextButton.Position = UDim2.new(0.0571428575, 0, 0.0163398702, 0)
+	TextButton.Size = UDim2.new(0, 141, 0, 50)
+	TextButton.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+	TextButton.Font = Enum.Font.SourceSans
+	TextButton.TextColor3 = Color3.new(0, 0, 0)
+	TextButton.TextSize = 14
+
+	TextButton_2.Parent = PPSCROLLFRAME
+	TextButton_2.BackgroundColor3 = Color3.new(1, 1, 1)
+	TextButton_2.Position = UDim2.new(0.0571428575, 0, 0.109477125, 0)
+	TextButton_2.Size = UDim2.new(0, 141, 0, 50)
+	TextButton_2.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+	TextButton_2.Font = Enum.Font.SourceSans
+	TextButton_2.TextColor3 = Color3.new(0, 0, 0)
+	TextButton_2.TextSize = 14
+
+	TextButton_3.Parent = PPSCROLLFRAME
+	TextButton_3.BackgroundColor3 = Color3.new(1, 1, 1)
+	TextButton_3.Position = UDim2.new(0.0571428575, 0, 0.209150329, 0)
+	TextButton_3.Size = UDim2.new(0, 141, 0, 50)
+	TextButton_3.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+	TextButton_3.Font = Enum.Font.SourceSans
+	TextButton_3.TextColor3 = Color3.new(0, 0, 0)
+	TextButton_3.TextSize = 14
+
+	TextButton_4.Parent = PPSCROLLFRAME
+	TextButton_4.BackgroundColor3 = Color3.new(1, 1, 1)
+	TextButton_4.Position = UDim2.new(0.0571428575, 0, 0.398692816, 0)
+	TextButton_4.Size = UDim2.new(0, 141, 0, 50)
+	TextButton_4.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+	TextButton_4.Font = Enum.Font.SourceSans
+	TextButton_4.TextColor3 = Color3.new(0, 0, 0)
+	TextButton_4.TextSize = 14
+
+	TextButton_5.Parent = PPSCROLLFRAME
+	TextButton_5.BackgroundColor3 = Color3.new(1, 1, 1)
+	TextButton_5.Position = UDim2.new(0.0571428575, 0, 0.30392158, 0)
+	TextButton_5.Size = UDim2.new(0, 141, 0, 50)
+	TextButton_5.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+	TextButton_5.Font = Enum.Font.SourceSans
+	TextButton_5.TextColor3 = Color3.new(0, 0, 0)
+	TextButton_5.TextSize = 14
+
+	TextButton_6.Parent = PPSCROLLFRAME
+	TextButton_6.BackgroundColor3 = Color3.new(1, 1, 1)
+	TextButton_6.Position = UDim2.new(0.0571428575, 0, 0.493464053, 0)
+	TextButton_6.Size = UDim2.new(0, 141, 0, 50)
+	TextButton_6.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+	TextButton_6.Font = Enum.Font.SourceSans
+	TextButton_6.TextColor3 = Color3.new(0, 0, 0)
+	TextButton_6.TextSize = 14
+
+	TextButton_7.Parent = PPSCROLLFRAME
+	TextButton_7.BackgroundColor3 = Color3.new(1, 1, 1)
+	TextButton_7.Position = UDim2.new(0.0571428575, 0, 0.589869261, 0)
+	TextButton_7.Size = UDim2.new(0, 141, 0, 50)
+	TextButton_7.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+	TextButton_7.Font = Enum.Font.SourceSans
+	TextButton_7.TextColor3 = Color3.new(0, 0, 0)
+	TextButton_7.TextSize = 14
+
+	TextButton_8.Parent = PPSCROLLFRAME
+	TextButton_8.BackgroundColor3 = Color3.new(1, 1, 1)
+	TextButton_8.Position = UDim2.new(0.0571428575, 0, 0.689542472, 0)
+	TextButton_8.Size = UDim2.new(0, 141, 0, 50)
+	TextButton_8.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+	TextButton_8.Font = Enum.Font.SourceSans
+	TextButton_8.TextColor3 = Color3.new(0, 0, 0)
+	TextButton_8.TextSize = 14
+
+	PPHAXPROFILE.Name = "PPHAXPROFILE"
+	PPHAXPROFILE.Parent = PPHAXFRAME
+	PPHAXPROFILE.BackgroundColor3 = Color3.new(1, 1, 1)
+	PPHAXPROFILE.Position = UDim2.new(0.0479797982, 0, 0.196078435, 0)
+	PPHAXPROFILE.Size = UDim2.new(0, 182, 0, 234)
+
+	PPHAXINFOFRAME.Name = "PPHAXINFOFRAME"
+	PPHAXINFOFRAME.Parent = PPHAXPROFILE
+	PPHAXINFOFRAME.Active = true
+	PPHAXINFOFRAME.BackgroundColor3 = Color3.new(0.513726, 0.784314, 0.745098)
+	PPHAXINFOFRAME.Size = UDim2.new(0, 182, 0, 234)
+
+	PPHAXNAME.Name = "PPHAXNAME"
+	PPHAXNAME.Parent = PPHAXINFOFRAME
+	PPHAXNAME.BackgroundColor3 = Color3.new(0.564706, 0.592157, 0.784314)
+	PPHAXNAME.Position = UDim2.new(0.0384615399, 0, 0.014957265, 0)
+	PPHAXNAME.Size = UDim2.new(0, 156, 0, 50)
+	PPHAXNAME.Font = Enum.Font.SourceSans
+	PPHAXNAME.Text = "Waiting for player information..."
+	PPHAXNAME.TextColor3 = Color3.new(0, 0, 0)
+	PPHAXNAME.TextScaled = true
+	PPHAXNAME.TextSize = 14
+	PPHAXNAME.TextWrapped = true
+
+	PPHAXINFO1.Name = "PPHAXINFO1"
+	PPHAXINFO1.Parent = PPHAXINFOFRAME
+	PPHAXINFO1.BackgroundColor3 = Color3.new(0.847059, 0.709804, 1)
+	PPHAXINFO1.Position = UDim2.new(0.0384615399, 0, 0.145299137, 0)
+	PPHAXINFO1.Size = UDim2.new(0, 156, 0, 50)
+	PPHAXINFO1.Font = Enum.Font.SourceSans
+	PPHAXINFO1.Text = ""
+	PPHAXINFO1.TextColor3 = Color3.new(0, 0, 0)
+	PPHAXINFO1.TextSize = 14
+
+	PPHAXINFO3.Name = "PPHAXINFO3"
+	PPHAXINFO3.Parent = PPHAXINFOFRAME
+	PPHAXINFO3.BackgroundColor3 = Color3.new(0.592157, 0.180392, 1)
+	PPHAXINFO3.Position = UDim2.new(0.0384615399, 0, 0.3931624, 0)
+	PPHAXINFO3.Size = UDim2.new(0, 156, 0, 50)
+	PPHAXINFO3.Font = Enum.Font.SourceSans
+	PPHAXINFO3.Text = ""
+	PPHAXINFO3.TextColor3 = Color3.new(0, 0, 0)
+	PPHAXINFO3.TextSize = 14
+
+	PPHAXINFO2.Name = "PPHAXINFO2"
+	PPHAXINFO2.Parent = PPHAXINFOFRAME
+	PPHAXINFO2.BackgroundColor3 = Color3.new(0.196078, 0.388235, 0.0745098)
+	PPHAXINFO2.Position = UDim2.new(0.0384615399, 0, 0.269230753, 0)
+	PPHAXINFO2.Size = UDim2.new(0, 156, 0, 50)
+	PPHAXINFO2.Font = Enum.Font.SourceSans
+	PPHAXINFO2.Text = ""
+	PPHAXINFO2.TextColor3 = Color3.new(0, 0, 0)
+	PPHAXINFO2.TextSize = 14
+
+	PPHAXINFO5.Name = "PPHAXINFO5"
+	PPHAXINFO5.Parent = PPHAXINFOFRAME
+	PPHAXINFO5.BackgroundColor3 = Color3.new(1, 0.772549, 0.866667)
+	PPHAXINFO5.Position = UDim2.new(0.0384615399, 0, 0.638888836, 0)
+	PPHAXINFO5.Size = UDim2.new(0, 156, 0, 50)
+	PPHAXINFO5.Font = Enum.Font.SourceSans
+	PPHAXINFO5.Text = ""
+	PPHAXINFO5.TextColor3 = Color3.new(0, 0, 0)
+	PPHAXINFO5.TextSize = 14
+
+	PPHAXINFO7.Name = "PPHAXINFO7"
+	PPHAXINFO7.Parent = PPHAXINFOFRAME
+	PPHAXINFO7.BackgroundColor3 = Color3.new(0.172549, 1, 0.615686)
+	PPHAXINFO7.Position = UDim2.new(0.0384615399, 0, 0.893162429, 0)
+	PPHAXINFO7.Size = UDim2.new(0, 156, 0, 50)
+	PPHAXINFO7.Font = Enum.Font.SourceSans
+	PPHAXINFO7.Text = ""
+	PPHAXINFO7.TextColor3 = Color3.new(0, 0, 0)
+	PPHAXINFO7.TextSize = 14
+
+	PPHAXINFO4.Name = "PPHAXINFO4"
+	PPHAXINFO4.Parent = PPHAXINFOFRAME
+	PPHAXINFO4.BackgroundColor3 = Color3.new(1, 0.360784, 0.109804)
+	PPHAXINFO4.Position = UDim2.new(0.0384615399, 0, 0.517094016, 0)
+	PPHAXINFO4.Size = UDim2.new(0, 156, 0, 50)
+	PPHAXINFO4.Font = Enum.Font.SourceSans
+	PPHAXINFO4.Text = ""
+	PPHAXINFO4.TextColor3 = Color3.new(0, 0, 0)
+	PPHAXINFO4.TextSize = 14
+
+	PPHAXINFO6.Name = "PPHAXINFO6"
+	PPHAXINFO6.Parent = PPHAXINFOFRAME
+	PPHAXINFO6.BackgroundColor3 = Color3.new(1, 0.0196078, 0.164706)
+	PPHAXINFO6.Position = UDim2.new(0.0384615399, 0, 0.767094016, 0)
+	PPHAXINFO6.Size = UDim2.new(0, 156, 0, 50)
+	PPHAXINFO6.Font = Enum.Font.SourceSans
+	PPHAXINFO6.Text = ""
+	PPHAXINFO6.TextColor3 = Color3.new(0, 0, 0)
+	PPHAXINFO6.TextSize = 14
+
+	PPHAXxRELQUIT.Name = "PPHAX x RELQUIT"
+	PPHAXxRELQUIT.Parent = PPHAXPROFILE
+	PPHAXxRELQUIT.BackgroundColor3 = Color3.new(0.0352941, 0.392157, 0.211765)
+	PPHAXxRELQUIT.BorderSizePixel = 0
+	PPHAXxRELQUIT.Position = UDim2.new(-0.0495893881, 0, -0.215183482, 0)
+	PPHAXxRELQUIT.Size = UDim2.new(0, 200, 0, 43)
+	PPHAXxRELQUIT.Font = Enum.Font.PermanentMarker
+	PPHAXxRELQUIT.Text = "PPHAX x RELQUIT"
+	PPHAXxRELQUIT.TextColor3 = Color3.new(0, 0, 0)
+	PPHAXxRELQUIT.TextScaled = true
+	PPHAXxRELQUIT.TextSize = 14
+	PPHAXxRELQUIT.TextWrapped = true
+end
